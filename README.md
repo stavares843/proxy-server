@@ -6,19 +6,19 @@
 - Install aiohttp
 
 ### Basic Authentication
-- ✅ The script includes a `VALID_CREDENTIALS` setup and ensures authentication using the `Proxy-Authorization` header. This is verified through the `verify_auth` function in the `proxy_handler`.
+- The script includes a `VALID_CREDENTIALS` setup and ensures authentication using the `Proxy-Authorization` header. This is verified through the `verify_auth` function in the `proxy_handler`.
 
 ### Track Bandwidth Usage and Most Visited Sites
-- ✅ Tracks total bandwidth usage with `data_store["bandwidth_usage"]`.
-- ✅ Records site visit counts in `data_store["site_visits"]`.
+- Tracks total bandwidth usage with `data_store["bandwidth_usage"]`.
+- Records site visit counts in `data_store["site_visits"]`.
 
 ### Real-time Metrics Endpoint (`GET /metrics`)
-- ✅ The `/metrics` endpoint, handled by the `metrics_handler` function, reports:
+- The `/metrics` endpoint, handled by the `metrics_handler` function, reports:
   - Total bandwidth usage.
   - A list of the most visited sites in JSON format.
 
 ### Final Summary on Server Shutdown
-- ✅ When the server is stopped gracefully, the `on_shutdown` function prints a summary of:
+- When the server is stopped gracefully, the `on_shutdown` function prints a summary of:
   - Total bandwidth used.
   - Most visited sites.
  
@@ -26,17 +26,17 @@
 
 
 ### Handle HTTP/HTTPS Traffic
-- ✅ The script forwards HTTP/HTTPS requests using `ClientSession` in the `proxy_handler` function.
+- The script forwards HTTP/HTTPS requests using `ClientSession` in the `proxy_handler` function.
 
 ### Usage Pattern
-- ✅ The proxy supports this usage pattern:
+- The proxy supports this usage pattern:
   
   ```bash
   curl -x http://proxy_server:proxy_port --proxy-user username:password -L <http://url>
   ```
 
 ### Metrics Format
-- ✅ The `/metrics` endpoint returns data in the following JSON format:
+- The `/metrics` endpoint returns data in the following JSON format:
   
   ```json
   {
@@ -50,12 +50,12 @@
 
  ### How to test
 
- - check requirements section
- - clone repo
+ - Check requirements section
+ - Clone repo
  - cd to this repo
- - go to terminal
- - execute ` python proxy_server.py`
- - then on another tab use the following command 
+ - Go to terminal
+ - Execute ` python proxy_server.py`
+ - Then on another tab use the following command 
 
 ```
 
