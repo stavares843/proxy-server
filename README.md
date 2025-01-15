@@ -48,9 +48,14 @@
   }
   ```
 
- ### For testing
+ ### How to test
 
-   Run all curl commands in sequence
+ - check requirements section
+ - clone repo
+ - cd to this repo
+ - go to terminal
+ - execute ` python proxy_server.py`
+ - then on another tab use the following command 
 
 ```
 
