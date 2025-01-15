@@ -171,4 +171,10 @@ app.router.add_get('/metrics', metrics_handler)    # metrics route
 app.on_shutdown.append(on_shutdown)
 
 if __name__ == "__main__":
-    web.run_app(app, port=8080)
+    import sys
+    try:
+        web.run_app(app, port=8080)
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt detected, shutting down gracefully...")
+        asyncio.run(on_shutdown(app))
+        sys.exit(0)
