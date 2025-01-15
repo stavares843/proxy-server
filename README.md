@@ -21,6 +21,9 @@
 - ✅ When the server is stopped gracefully, the `on_shutdown` function prints a summary of:
   - Total bandwidth used.
   - Most visited sites.
+ 
+<img width="272" alt="Captura de ecrã 2025-01-15, às 22 24 32" src="https://github.com/user-attachments/assets/0c48daa1-db5f-4543-99b5-312ca5a4838c" />
+
 
 ### Handle HTTP/HTTPS Traffic
 - ✅ The script forwards HTTP/HTTPS requests using `ClientSession` in the `proxy_handler` function.
