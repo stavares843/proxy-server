@@ -22,7 +22,8 @@
   - Total bandwidth used.
   - Most visited sites.
  
-<img width="272" alt="Captura de ecrã 2025-01-15, às 22 24 32" src="https://github.com/user-attachments/assets/0c48daa1-db5f-4543-99b5-312ca5a4838c" />
+
+<img width="314" alt="Captura de ecrã 2025-01-15, às 22 32 26" src="https://github.com/user-attachments/assets/390aeff2-4c10-4217-b7cb-97212d64bb82" />
 
 
 ### Handle HTTP/HTTPS Traffic
