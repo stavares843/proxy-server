@@ -1,5 +1,9 @@
 # proxy-server
 
+### Requirements
+
+- Install Python
+- Install aiohttp
 
 ### Basic Authentication
 - ✅ The script includes a `VALID_CREDENTIALS` setup and ensures authentication using the `Proxy-Authorization` header. This is verified through the `verify_auth` function in the `proxy_handler`.
